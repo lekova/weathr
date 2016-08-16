@@ -28,8 +28,10 @@ const packages: any = {
   },
   'moment': {
     format: 'cjs',
+  },
+  'chart.js': {
+    format: 'cjs'
   }
-
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -54,6 +56,7 @@ const barrels: string[] = [
   'app',
   'app/shared',
   'app/navbar',
+  'app/line-chart',
   /** @cli-barrel */
 ];
 

@@ -18,7 +18,8 @@ module.exports = function(defaults) {
       '@angular/**/*.+(js|js.map)',
       'ng2-bootstrap/**/*.js',
       'moment/moment.js',
-      'ng2-charts/**/*.js'
+      'ng2-charts/**/*.js',
+      'chart.js/dist/Chart.js'
     ]
   });
 };
