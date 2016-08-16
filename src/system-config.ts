@@ -28,8 +28,6 @@ const packages: any = {
   },
   'moment': {
     format: 'cjs',
-    defaultExtension: 'js',
-    main: 'moment.js'
   }
 
 };
@@ -55,6 +53,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/navbar',
   /** @cli-barrel */
 ];
 
