@@ -11,7 +11,8 @@
 const map: any = {
   'ng2-bootstrap': 'vendor/ng2-bootstrap',
   'ng2-charts': 'vendor/ng2-charts',
-  'moment': 'vendor/moment/moment.js'
+  'moment': 'vendor/moment/moment.js',
+  'chart.js': 'vendor/chart.js/dist/Chart.js'
 };
 
 /** User packages configuration. */
@@ -21,6 +22,9 @@ const packages: any = {
     defaultExtension: 'js',
     main: 'ng2-bootstrap.js'
   },
+  'chart.js': {
+    format: 'cjs'
+  },
   'ng2-charts': {
     format: 'cjs',
     defaultExtension: 'js',
@@ -29,8 +33,10 @@ const packages: any = {
   'moment': {
     format: 'cjs',
   },
-  'chart.js': {
-    format: 'cjs'
+  'core-js': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'core.js'
   }
 };
 

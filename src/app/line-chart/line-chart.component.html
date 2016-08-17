@@ -2,27 +2,15 @@
     <div class="row">
         <div class="heading-text">Temperature Hourly</div>
     </div>
-    <!--<base-chart *ngIf="dataLoaded"
+    <base-chart *ngIf="dataLoaded"
         class="chart"
         id="lineChart"
-        [data]="lineChartData"
+        [datasets]="lineChartData"
         [labels]="lineChartLabels"
         [options]="lineChartOptions"
-        [colours]="lineChartColours"
-        [legend]="lineChartLegend"
-        [chartType]="lineChartType"
-        (chartHover)="chartHovered($event)"
-        (chartClick)="chartClicked($event)"></base-chart>-->
-
-     <base-chart class="chart"
-        [data]="lineChartData"
-        [labels]="lineChartLabels"
-        [options]="lineChartOptions"
-        [series]="lineChartSeries"
-        [colours]="lineChartColours"
+        [colors]="lineChartColours"
         [legend]="lineChartLegend"
         [chartType]="lineChartType"
         (chartHover)="chartHovered($event)"
         (chartClick)="chartClicked($event)"></base-chart>
-</div>
-
+  </div>
