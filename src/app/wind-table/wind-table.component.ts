@@ -27,10 +27,7 @@ export class WindTableComponent implements OnInit {
   calculateDirection(): void {
     for(let dir of this.directions) {
       var degrees = this.getRotationAngle(dir);
-      console.log("degrees are ", degrees);
-      let str = `rotate(${degrees}deg)`;
-      console.log("string is ", str)
-      this.arrows.push(str);
+      this.arrows.push(`rotate(${degrees}deg)`);
     }
   }
 
