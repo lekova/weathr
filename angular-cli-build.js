@@ -20,7 +20,8 @@ module.exports = function(defaults) {
       'moment/moment.js',
       'chart.js/dist/Chart.js',
       'ng2-charts/**/*.js',
-      'core-js/client/core.js'
+      'core-js/client/core.js',
+      'ng2-table/**/*.js',
     ]
   });
 };

@@ -12,7 +12,8 @@ const map: any = {
   'ng2-bootstrap': 'vendor/ng2-bootstrap',
   'ng2-charts': 'vendor/ng2-charts',
   'moment': 'vendor/moment/moment.js',
-  'chart.js': 'vendor/chart.js/dist/Chart.js'
+  'chart.js': 'vendor/chart.js/dist/Chart.js',
+  'ng2-table': 'vendor/ng2-table',
 };
 
 /** User packages configuration. */
@@ -26,6 +27,11 @@ const packages: any = {
     format: 'cjs'
   },
   'ng2-charts': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'ng2-charts.js'
+  },
+  'ng2-table': {
     format: 'cjs',
     defaultExtension: 'js',
     main: 'ng2-charts.js'
@@ -66,6 +72,8 @@ const barrels: string[] = [
   'app/wind-table',
   'app/local-weather',
   'app/location',
+  'app/tides',
+  'app/tide-table',
   /** @cli-barrel */
 ];
 

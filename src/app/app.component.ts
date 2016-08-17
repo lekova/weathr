@@ -4,6 +4,7 @@ import { LocationComponent } from './location/location.component';
 import { LocalWeatherComponent } from './local-weather/local-weather.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { WindTableComponent } from './wind-table/wind-table.component';
+import { TideTableComponent } from './tide-table/tide-table.component';
 
 @Component({
   moduleId: module.id,
@@ -14,7 +15,8 @@ import { WindTableComponent } from './wind-table/wind-table.component';
     LocationComponent,
     LocalWeatherComponent,
     LineChartComponent,
-    WindTableComponent
+    WindTableComponent,
+    TideTableComponent
   ]
 })
 export class AppComponent {
