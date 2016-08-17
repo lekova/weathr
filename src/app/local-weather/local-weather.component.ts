@@ -90,7 +90,13 @@ export class LocalWeatherComponent implements OnInit {
       feelslike_c: Math.round(parseFloat(this.weatherJson.feelslike_c)),
       visibility_mi: this.weatherJson.visibility_mi,
       icon: this.weatherJson.icon,
-      icon_url: this.weatherJson.icon_url
+      icon_url: this.weatherJson.icon_url,
+      tempHigh: 55, // TODO: get from somewhere
+      tempLow: 95, // TODO: get from somewhere
+      precip: this.weatherJson.precip_today_in,
+      humidity: this.weatherJson.relative_humidity,
+      rainFall: 'N/A',
+      snowDepth: 'N/A',
   };
 
   constructor() {

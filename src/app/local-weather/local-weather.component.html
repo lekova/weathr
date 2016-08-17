@@ -37,6 +37,7 @@
         </div>
     </div>
 </div>
+<hr>
 <div class="row">
     <div class="col-xs-4 measurements right-col-border">
         <div class="small-text">
@@ -61,6 +62,37 @@
             Waxing
             <div class="moon-phase"></div>
             <div>96% luminous</div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-6 measurements">
+        <div class="col-xs-8 no-margin-no-padding">
+            <div class="small-text">Temp High</div>
+            <div class="small-text">Temp Low</div>
+            <div class="small-text">Parcip. Chance</div>
+            <div class="small-text">Pressure</div>
+        </div>
+        <div>
+            <div class="small-text-red">{{weatherData.tempHigh}} °F</div>
+            <div class="small-text-red">{{weatherData.tempLow}} °F</div>
+            <div class="small-text-red">{{weatherData.precip}} %</div>
+            <div class="small-text-red">{{weatherData.pressure_in}} in</div>
+        </div>
+    </div>
+    <div class="col-xs-6 measurements">
+        <div class="col-xs-8 no-margin-no-padding">
+            <div class="small-text">Visibility</div>
+            <div class="small-text">Humidity</div>
+            <div class="small-text">Rainfall</div>
+            <div class="small-text">Snow Depth</div>
+        </div>
+        <div>
+            <div class="small-text-red">{{weatherData.visibility_mi}} miles</div>
+            <div class="small-text-red"> {{weatherData.humidity}} %</div>
+            <div class="small-text-red">{{weatherData.rainFall}}</div>
+            <div class="small-text-red">{{weatherData.snowDepth}}</div>
         </div>
     </div>
 </div>
