@@ -65,6 +65,7 @@ const barrels: string[] = [
   'app/line-chart',
   'app/wind-table',
   'app/local-weather',
+  'app/location',
   /** @cli-barrel */
 ];
 
