@@ -3,11 +3,26 @@
 // Also see https://github.com/angular/angular-cli/wiki/3rd-party-libs
 
 /* global require, module */
+'use strict';
 
-var Angular2App = require('angular-cli/lib/broccoli/angular2-app');
+const Angular2App = require('angular-cli/lib/broccoli/angular2-app');
 
-module.exports = function(defaults) {
-  return new Angular2App(defaults, {
+const compileSass = require('broccoli-sass');
+const mergeTrees = require('broccoli-merge-trees');
+const _ = require('lodash');
+const glob = require('glob');
+
+const compileCSS = require('broccoli-postcss');
+const cssnext = require('postcss-cssnext');
+const cssnano = require('cssnano');
+
+module.exports = function (defaults) {
+  let appTree = new Angular2App(defaults, {
+    sassCompiler: {
+      includePaths: [
+        'src/style'
+      ]
+    },
     vendorNpmFiles: [
       'systemjs/dist/system-polyfills.js',
       'systemjs/dist/system.src.js',
@@ -24,4 +39,32 @@ module.exports = function(defaults) {
       'ng2-table/**/*.js',
     ]
   });
+
+  let sass = mergeTrees(_.map(glob.sync('src/**/*.scss'), function (sassFile) {
+    sassFile = sassFile.replace('src/', '');
+    return compileSass(['src'], sassFile, sassFile.replace(/.scss$/, '.css'));
+  }));
+
+  var options = {
+    plugins: [
+      {
+        module: cssnext,
+        options: {
+          browsers: ['> 1%'],
+          warnForDuplicates: false
+        }
+      },
+      {
+        module: cssnano,
+        options: {
+          safe: true,
+          sourcemap: true
+        }
+      }
+    ]
+  };
+
+  let css = compileCSS(sass, options);
+
+  return mergeTrees([appTree, sass, css], { override: true })
 };
