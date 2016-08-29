@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'local-weather',
-  templateUrl: 'local-weather.component.html',
-  styleUrls: ['local-weather.component.css']
+  templateUrl: 'app/local-weather/local-weather.component.html',
+  styleUrls: ['app/local-weather/local-weather.component.css']
 })
 export class LocalWeatherComponent implements OnInit {
   // example of weather api response json

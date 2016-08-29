@@ -4,10 +4,9 @@ import { Moment } from 'moment/moment';
 
 
 @Component({
-  moduleId: module.id,
   selector: 'wind-table',
-  templateUrl: 'wind-table.component.html',
-  styleUrls: ['wind-table.component.css'],
+  templateUrl: 'app/wind-table/wind-table.component.html',
+  styleUrls: ['app/wind-table/wind-table.component.css'],
   directives: [NgStyle],
 })
 export class WindTableComponent implements OnInit {

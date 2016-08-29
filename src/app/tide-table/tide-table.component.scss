@@ -1,0 +1,6 @@
+
+@import '../.././style/main';
+
+.table-striped>tbody>tr:nth-of-type(odd){
+  background-color: rgba($color, 0.2);
+}

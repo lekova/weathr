@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CollapseDirective } from 'ng2-bootstrap';
 
 @Component({
-  moduleId: module.id,
   selector: 'navbar',
-  templateUrl: 'navbar.component.html',
-  styleUrls: ['navbar.component.css'],
+  templateUrl: 'app/navbar/navbar.component.html',
+  styleUrls: ['app/navbar/navbar.component.css'],
   directives: [ CollapseDirective]
 })
 export class NavbarComponent implements OnInit {

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'location',
-  templateUrl: 'location.component.html',
-  styleUrls: ['location.component.css'],
+  templateUrl: 'app/location/location.component.html',
+  styleUrls: ['app/location/location.component.css'],
 })
 export class LocationComponent implements OnInit {
 

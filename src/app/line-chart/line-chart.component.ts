@@ -3,10 +3,9 @@ import { CORE_DIRECTIVES, NgClass } from '@angular/common';
 import { CHART_DIRECTIVES } from 'ng2-charts/ng2-charts';
 
 @Component({
-  moduleId: module.id,
   selector: 'line-chart',
-  templateUrl: 'line-chart.component.html',
-  styleUrls: ['line-chart.component.css'],
+  templateUrl: 'app/line-chart/line-chart.component.html',
+  styleUrls: ['app/line-chart/line-chart.component.css'],
   directives: [ CORE_DIRECTIVES, CHART_DIRECTIVES, NgClass]
 })
 export class LineChartComponent implements OnInit {

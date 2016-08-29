@@ -7,10 +7,9 @@ import { WindTableComponent } from './wind-table/wind-table.component';
 import { TideTableComponent } from './tide-table/tide-table.component';
 
 @Component({
-  moduleId: module.id,
   selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  templateUrl: 'app/app.component.html',
+  styleUrls: ['app/app.component.css'],
   directives: [NavbarComponent,
     LocationComponent,
     LocalWeatherComponent,
@@ -20,4 +19,5 @@ import { TideTableComponent } from './tide-table/tide-table.component';
   ]
 })
 export class AppComponent {
+
 }
