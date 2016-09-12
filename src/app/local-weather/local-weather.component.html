@@ -1,4 +1,4 @@
-<div class="row" id="local-weather">
+<div class="row-no-margins" id="local-weather">
     <div class="heading-text">
         <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> {{weatherData.city + ', ' + weatherData.state}}
         <span class="split"> | </span>
@@ -6,93 +6,107 @@
           Today is <span class="small-text-red">much warmer</span> than yesterday
         </span>
     </div>
-    <div class="row equal">
-        <div class="col-xs-4 temperature">
-            <span> {{weatherData.temp_f}}°</span>
-            <span class="temperature-unit">F</span>
-        </div>
-        <div class="col-xs-4">
-            <img src="images/day-clear.png">
-        </div>
-        <div class="col-xs-4 windmill-container">
-            <img class="windmill-turbine" alt="Windmill turbines" src="images/windmill-turbines-grey-2.png">
-            <img class="windmill-base" alt="Windmill base" src="images/windmill-base-grey.png">
+    <div class="row-no-margins">
+        <div class="row-height">
+            <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle">
+                <div class="left-border">
+                    <span class="temperature">{{weatherData.temp_f}}°</span>
+                    <span class="temperature-unit">F</span>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle">
+                <div class="left-border">
+                    <img src="images/day-clear.png">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle">
+                <div class="windmill-container left-border right-border">
+                    <img class="windmill-turbine" alt="Windmill turbines" src="images/windmill-turbines-grey-2.png">
+                    <img class="windmill-base" alt="Windmill base" src="images/windmill-base-grey.png">
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-xs-4">
-        <div class="small-text"> Feels like
-            <span class="small-text-red">{{weatherData.feelslike_f}} °F</span>
+<div class="row-no-margins">
+    <div class="row-height">
+        <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle">
+            <div class="small-text"> Feels like
+                <span class="small-text-red">{{weatherData.feelslike_f}} °F</span>
+            </div>
         </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="small-text">Clear Sunny </div>
-    </div>
-    <div class="col-xs-4">
-        <div class="small-text">
-            <span class="small-text-red"> {{weatherData.wind_mph}}</span> mph
-            <span class="small-text-red">{{weatherData.wind_dir}}</span>
+        <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle">
+            <div class="small-text">Clear Sunny </div>
+        </div>
+        <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle">
+            <div class="small-text">
+                <span class="small-text-red"> {{weatherData.wind_mph}}</span> mph
+                <span class="small-text-red">{{weatherData.wind_dir}}</span>
+            </div>
         </div>
     </div>
 </div>
 <hr>
-<div class="row">
-    <div class="col-xs-4 measurements right-col-border">
-        <div class="small-text">
-            Sun
-            <div>
-                <img src="images/sun-up.png"> {{sunrise}} AM
-                <img class="image-upside-down" src="images/sun-up.png"> {{sunset}} PM
+<div class="row-no-margins">
+    <div class="row-height">
+        <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle left-border">
+            <div class="small-text">
+                Sun
+                <div><img src="images/sun-up.png"> {{weatherData.sunrise}} AM</div>
+                <div><img class="image-upside-down" src="images/sun-up.png"> {{weatherData.sunset}} PM</div>
             </div>
         </div>
-    </div>
-    <div class="col-xs-4 measurements right-col-border">
-        <div class="small-text">
-            Moon
-            <div>
-                <img src="images/moon-up-blue.png"> {{moonrise}} PM
-                <img class="image-upside-down" src="images/moon-up-blue.png"> {{moonset}} AM
+        <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle left-border">
+            <div class="small-text">
+                Moon
+                <div><img src="images/moon-up-blue.png"> {{weatherData.moonrise}} PM</div>
+                <div><img class="image-upside-down" src="images/moon-up-blue.png"> {{weatherData.moonset}} AM</div>
             </div>
         </div>
-    </div>
-    <div class="col-xs-4 measurements">
-        <div class="small-text">
-            Waxing
-            <div class="moon-phase"></div>
-            <div>96% luminous</div>
+        <div class="col-xs-4 col-sm-2 col-sm-height col-sm-middle left-border right-border">
+            <div class="small-text">
+                Waxing
+                <div class="moon-phase"></div>
+                <div>96% luminous</div>
+            </div>
         </div>
     </div>
 </div>
 <hr>
-<div class="row">
-    <div class="col-xs-6 measurements">
-        <div class="col-xs-8 no-margin-no-padding">
-            <div class="small-text">Temp High</div>
-            <div class="small-text">Temp Low</div>
-            <div class="small-text">Parcip. Chance</div>
-            <div class="small-text">Pressure</div>
+<div class="row-no-margins">
+    <div class="row-height">
+        <div class="col-xs-6 col-sm-6 col-sm-height col-sm-middle left-border">
+            <div class="row-height">
+                <div class="col-xs-6 col-sm-6 col-sm-height col-sm-middle">
+                    <div>Temp High</div>
+                    <div>Temp Low</div>
+                    <div>Parcip. Chance</div>
+                    <div>Pressure</div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-sm-height col-sm-middle">
+                    <div class="small-text-red">{{weatherData.tempHigh}} °F</div>
+                    <div class="small-text-red">{{weatherData.tempLow}} °F</div>
+                    <div class="small-text-red">{{weatherData.precip}} %</div>
+                    <div class="small-text-red">{{weatherData.pressure_in}} in</div>
+                </div>
+            </div>
         </div>
-        <div>
-            <div class="small-text-red">{{weatherData.tempHigh}} °F</div>
-            <div class="small-text-red">{{weatherData.tempLow}} °F</div>
-            <div class="small-text-red">{{weatherData.precip}} %</div>
-            <div class="small-text-red">{{weatherData.pressure_in}} in</div>
-        </div>
-    </div>
-    <div class="col-xs-6 measurements">
-        <div class="col-xs-8 no-margin-no-padding">
-            <div class="small-text">Visibility</div>
-            <div class="small-text">Humidity</div>
-            <div class="small-text">Rainfall</div>
-            <div class="small-text">Snow Depth</div>
-        </div>
-        <div>
-            <div class="small-text-red">{{weatherData.visibility_mi}} miles</div>
-            <div class="small-text-red"> {{weatherData.humidity}} %</div>
-            <div class="small-text-red">{{weatherData.rainFall}}</div>
-            <div class="small-text-red">{{weatherData.snowDepth}}</div>
+        <div class="col-xs-6 col-sm-6 col-sm-height col-sm-middle left-border right-border">
+            <div class="row-height">
+                <div class="col-xs-6 col-sm-6 col-sm-height col-sm-middle">
+                    <div>Visibility</div>
+                    <div>Humidity</div>
+                    <div>Rainfall</div>
+                    <div>Snow Depth</div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-sm-height col-sm-middle">
+                    <div class="small-text-red">{{weatherData.visibility_mi}} miles</div>
+                    <div class="small-text-red">{{weatherData.humidity}} %</div>
+                    <div class="small-text-red">{{weatherData.rainFall}}</div>
+                    <div class="small-text-red">{{weatherData.snowDepth}}</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

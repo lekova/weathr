@@ -96,6 +96,10 @@ export class LocalWeatherComponent implements OnInit {
       humidity: this.weatherJson.relative_humidity,
       rainFall: 'N/A',
       snowDepth: 'N/A',
+      sunrise: '06:03',
+      sunset: '19:53',
+      moonrise: '20:03',
+      moonset: '05:18'
   };
 
   constructor() {

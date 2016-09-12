@@ -1,16 +1,19 @@
-<div class="col-xs-12 col-md-6">
-    <div class="row">
-        <div class="heading-text">Temperature Hourly</div>
+
+<div class="col-xs-12 col-sm-6 col-sm-height col-sm-middle">
+    <div class="row-no-margins">
+        <div class="heading-text">Temperature Hourly <span class="test">text</span></div>
     </div>
-    <base-chart *ngIf="dataLoaded"
-        class="chart"
-        id="lineChart"
-        [datasets]="lineChartData"
-        [labels]="lineChartLabels"
-        [options]="lineChartOptions"
-        [colors]="lineChartColours"
-        [legend]="lineChartLegend"
-        [chartType]="lineChartType"
-        (chartHover)="chartHovered($event)"
-        (chartClick)="chartClicked($event)"></base-chart>
+    <div class="custom-chart">
+        <base-chart *ngIf="dataLoaded"
+            class="chart"
+            id="lineChart"
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [colors]="lineChartColours"
+            [legend]="lineChartLegend"
+            [chartType]="lineChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></base-chart>
+    </div>
   </div>

@@ -1,2 +1,56 @@
 @import "variables";
 @import 'utility';
+@import '_variables';
+
+.button-primary {
+  background-color: $color;
+}
+
+body {
+  font-size: 12px;
+  color: $color-dark-grey;
+}
+
+.row-no-margins {
+  // border: 1px solid purple;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.small-text-red {
+  color: $color-red;
+}
+.small-text-blue {
+  color: $color;
+}
+
+.right-border {
+  border-right: 1px solid $color-light-grey;
+}
+
+.left-border {
+  border-left: 1px solid $color-light-grey;
+}
+
+.heading-text {
+  color: $color;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.col-xs-4.col-sm-2.col-sm-height.col-sm-middle {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.col-sm-middle {
+  vertical-align: middle;
+}
