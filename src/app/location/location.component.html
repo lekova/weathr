@@ -3,6 +3,7 @@
         <div class="small-text-blue">Not in Boston? Find your location...</div>
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search Map" [(ngModel)]="address"
+                (setAddress)="getAddress($event)" (click)="getBrowserLocation()" googleplace>
             <span class="input-group-btn">
             <button class="btn btn-default button-primary" type="button">
                 <span class="color-white"><i class="glyphicon glyphicon-search"></i></span>
