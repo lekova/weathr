@@ -5,6 +5,7 @@ import { LocalWeatherComponent } from './local-weather/local-weather.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { WindTableComponent } from './wind-table/wind-table.component';
 import { TideTableComponent } from './tide-table/tide-table.component';
+import { GeolocationService } from './services/geolocation.service';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,9 @@ import { TideTableComponent } from './tide-table/tide-table.component';
     LineChartComponent,
     WindTableComponent,
     TideTableComponent
+  ],
+  providers: [
+    GeolocationService
   ]
 })
 export class AppComponent {
