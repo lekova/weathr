@@ -50,7 +50,7 @@ module.exports = function (defaults) {
       'ng2-bootstrap/**/*.js',
       'moment/moment.js',
       'ng2-charts/**/*.js',
-      'chart.js/dist/Chart.min.js',
+      'chart.js/dist/Chart.min.js'
     ]
   });
 
